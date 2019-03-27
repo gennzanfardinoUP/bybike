@@ -71,3 +71,29 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE `feedback` (
+  `idFeedback` int(11) NOT NULL,
+  `idUser` int(11) NOT NULL,
+  `idLocation` int(11) NOT NULL,
+  `location`char NOT NULL,
+  `address`char NOT NULL,
+  `coordinates` float( 10, 6 ),
+  `fbDescription`char NOT NULL,
+  `date/time` Datetime NOT NULL,
+  `rating` float NOT NULL
+)
+
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`idFeedback`);
+
+CREATE TABLE `location` (
+  `locationid` int(11) NOT NULL,
+  `location` char NOT NULL,
+  `address` char NOT NULL,
+  `coodinates` float( 10, 6 )NOT NULL,
+  `overallRating` float NOT NULL,
+)
+
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`idLocation`);
