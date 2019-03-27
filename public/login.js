@@ -22,6 +22,6 @@ app.use(bodyParser.json());
 
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/Register.html'));
+	response.sendFile(path.join(__dirname + '/login.html'));
 });
 app.use(express.static(__dirname));
