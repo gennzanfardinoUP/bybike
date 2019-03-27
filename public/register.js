@@ -30,4 +30,4 @@ app.post('/auth', function(request, response) {
 	var username = request.body.username;
   var email = request.body.email;
 	var password = request.body.password;
-	var password = resuest.body.password;
+	var confirm password = request.body.password;
