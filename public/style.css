@@ -665,3 +665,116 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 .submitbutton :hover{
 	background-color: skyblue;
 }
+
+/*Star Rating*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: right;
+    height: 46px;
+        margin-top: -3%;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:500%;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/*Add reviews background*/
+.locationbar{
+    background-color: #008FFF;
+    display: inline-block;
+    width: 68%;
+    height: 6%;
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.locationbarshort{
+    background-color: #008FFF;
+    display: inline-block;
+    width: 56%;
+    height: 6%;
+    position: absolute;
+    top: 12%;
+    left: 26%;
+    border-top-left-radius: 5px;
+}
+
+.outerstarbox{
+    display: inline-block;
+    background-color: white;
+    height: 65%;
+    width: 68%;
+    position: absolute;
+    top: 23%;
+    left: 26%;
+}
+
+.addbutton{
+    display: inline-block;
+    background-color: #008FFF;
+  height: 6%;
+  width: 25%;
+  position: absolute;
+  top: 90%;
+  left: 26%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.addbutton :hover{
+    background-color: skyblue;
+}
+
+.submitRating{
+    display: inline-block;
+    background-color: #008FFF;
+  height: 6%;
+  width: 25%;
+  position: absolute;
+  top: 90%;
+  left: 69%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.submitRating :hover{
+    background-color: skyblue;
+}
+
+/*Back button AddStarFeedback*/
+.backbutton :hover{
+    background-color: skyblue;
+}
