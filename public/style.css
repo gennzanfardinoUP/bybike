@@ -580,3 +580,88 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 	height: 100%;
 	border-radius: 5px;
 }
+
+/*Report Fault CSS*/
+
+.clicktext{
+	margin: 0;
+	text-align:center;
+	color: white;
+	position:	relative;
+	height: 100%;
+	border-radius: 5px;
+}
+
+#reporttitlebox{
+	display: inline-block;
+	background-color: #008FFF;
+	height: 7%;
+	width: 58%;
+	border-top-left-radius: 5px;
+	position: absolute;
+	top: 3%;
+	left: 26%;
+}
+
+#reportbackbutton{
+	display: inline-block;
+	background-color: #008FFF;
+	height: 7%;
+	width: 11%;
+	border-top-right-radius: 5px;
+	position: absolute;
+	top: 3%;
+	left: 85%;
+}
+
+#reportinfobox{
+	display: inline-block;
+	background-color: #008FFF;
+	height: 10%;
+	width: 70%;
+	position: absolute;
+	top: 13.5%;
+	left: 26%;
+}
+
+#reporttextbox{
+	display: inline-block;
+	min-width: 70%;
+	min-height: 62.5%;
+	max-width: 62.5%;
+	max-height: 62.5%;
+	position: absolute;
+	top: 27%;
+	left: 26%;
+}
+
+.submitbutton{
+	background-color: #008FFF;
+	display: inline-block;
+	height: 5%;
+	width: 70%;
+	position: absolute;
+	top: 93%;
+	left: 26%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.backbutton{
+	display: inline-block;
+	background-color: #008FFF;
+	height: 6%;
+	width: 11%;
+	border-top-right-radius: 5px;
+	position: absolute;
+	top: 12%;
+	left: 83%;
+}
+
+#reportbackbutton :hover{
+	background-color: skyblue;
+}
+
+.submitbutton :hover{
+	background-color: skyblue;
+}
