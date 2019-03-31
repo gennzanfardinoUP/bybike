@@ -626,8 +626,10 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 #reporttextbox{
 	display: inline-block;
-	height: 63%;
-	width: 70%;
+	min-width: 70%;
+	min-height: 62.5%;
+	max-width: 62.5%;
+	max-height: 62.5%;
 	position: absolute;
 	top: 27%;
 	left: 26%;
