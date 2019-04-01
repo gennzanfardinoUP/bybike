@@ -10,18 +10,21 @@
       <a class="header-link" routerLink="/new-thing" routerLinkActive="active">Admin</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
-      <a class="header-link" style="cursor: pointer" (click)="onLogout()">LOGOUT</a>
+      <a class="header-link" style="cursor: pointer" (click)="onLogout()">LogOut</a>
+    </li>
+    <li class="header-navigation-item" *ngIf="isAuth">
+      <input class="header-searchbar" type="text" placeholder="Search..">
     </li>
     <li class="header-navigation-item" *ngIf="!isAuth">
-      <a class="header-link" routerLink="/auth/login" routerLinkActive="active">LOGIN</a>
+      <a class="header-link" routerLink="/auth/login" routerLinkActive="active">LogIn</a>
     </li>
     <li class="header-navigation-item" *ngIf="!isAuth">
-      <a class="header-link" routerLink="/auth/signup" routerLinkActive="active">SIGN UP</a>
+      <a class="header-link" routerLink="/auth/signup" routerLinkActive="active">SignUp</a>
     </li>
   </ul>
   <ul class="header-navigation nav-end">
-    <li class="header-navigation-item font-italic">
-      <a class="header-link" style="cursor:pointer" (click)="onBackToParts()">HOME</a>
+        <li class="header-navigation-item font-italic">
+      <a class="header-link" style="cursor:pointer" (click)="onBackHome()">HOME</a>
     </li>
   </ul>
 </header>
