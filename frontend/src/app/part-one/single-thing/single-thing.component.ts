@@ -54,9 +54,7 @@ export class SingleThingComponent implements OnInit, OnDestroy {
     if (this.part === 1) {
       this.router.navigate(['/part-one/all-stuff']);
     } else if (this.part === 3) {
-      this.router.navigate(['/part-three/all-stuff']);
-    } else if (this.part === 4) {
-      this.router.navigate(['/part-four/all-stuff']);
+      this.router.navigate(['/default/all-stuff']);
     }
   }
 
@@ -67,10 +65,7 @@ export class SingleThingComponent implements OnInit, OnDestroy {
         this.router.navigate(['/part-one/modify-thing/' + this.thing._id]);
         break;
       case 3:
-        this.router.navigate(['/part-three/modify-thing/' + this.thing._id]);
-        break;
-      case 4:
-        this.router.navigate(['/part-four/modify-thing/' + this.thing._id]);
+        this.router.navigate(['/default/modify-thing/' + this.thing._id]);
         break;
     }
   }
@@ -86,10 +81,7 @@ export class SingleThingComponent implements OnInit, OnDestroy {
             this.router.navigate(['/part-one/all-stuff']);
             break;
           case 3:
-            this.router.navigate(['/part-three/all-stuff']);
-            break;
-          case 4:
-            this.router.navigate(['/part-four/all-stuff']);
+            this.router.navigate(['/default/all-stuff']);
             break;
         }
       }

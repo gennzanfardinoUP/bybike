@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PartOneComponent } from './part-one/part-one.component';
-import { PartThreeComponent } from './part-three/part-three.component';
-import { PartFourComponent } from './part-four/part-four.component';
 import { DefaultComponent } from './default/default.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -27,8 +25,6 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     PartOneComponent,
-    PartThreeComponent,
-    PartFourComponent,
     DefaultComponent,
     HeaderComponent,
     StuffListComponent,
