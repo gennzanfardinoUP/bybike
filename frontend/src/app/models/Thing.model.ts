@@ -1,8 +1,8 @@
 export class Thing {
   _id: string;
-  title: string;
+  name: string;
   description: string;
   imageUrl: string;
-  price: number;
-  userId: string;
+  coordinates: string;
+  rating: number;
 }
