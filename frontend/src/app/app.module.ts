@@ -17,7 +17,6 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
-import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
