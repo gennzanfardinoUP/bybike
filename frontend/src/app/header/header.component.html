@@ -1,13 +1,13 @@
 <header>
   <h1 class="header-title">
-    AddLocs&Revs
+    Let's Go byBike
   </h1>
   <ul class="header-navigation">
     <li class="header-navigation-item" *ngIf="isAuth">
       <a class="header-link" routerLink="/all-stuff" routerLinkActive="active">Locations</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
-      <a class="header-link" routerLink="/new-thing" routerLinkActive="active">AddLocs&Revs</a>
+      <a class="header-link" routerLink="/new-thing" routerLinkActive="active">Admin</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
       <a class="header-link" style="cursor: pointer" (click)="onLogout()">LOGOUT</a>
@@ -21,12 +21,10 @@
   </ul>
   <ul class="header-navigation nav-end">
     <li class="header-navigation-item font-italic">
-      <a class="header-link" style="cursor:pointer" (click)="onBackToParts()">BACK TO PART SELECTION</a>
+      <a class="header-link" style="cursor:pointer" (click)="onBackToParts()">HOME</a>
     </li>
   </ul>
 </header>
-<div class="hero-image" *ngIf="mode === 'list'">
-  <h2 class="hero-text">
-    Let's Go byBike
-  </h2>
+<div  *ngIf="mode === 'list'">
+
 </div>
