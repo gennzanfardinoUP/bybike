@@ -5,7 +5,7 @@
     <img [src]="thing?.imageUrl" alt="">
     <div class="single-thing-info">
       <h1>{{ thing?.title }}</h1>
-      <h2 class="single-thing-price">{{ thing?.price / 100 | currency:'EUR' }}</h2>
+      <h2 class="single-thing-price">{{ thing?.price / 5 }}</h2>
       <p>{{ thing?.description }}</p>
       <button class="btn btn-success m-1" (click)="onModify()" [disabled]="part >= 3 && userId !== thing?.userId">Modify</button>
       <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="part >= 3 && userId !== thing?.userId">Delete</button>
