@@ -48,8 +48,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
             break;
         }
       }
-      */
-    );
+
+    );*/
     this.isAuthSub = this.auth.isAuth$.subscribe(
       (auth) => {
         this.isAuth = auth;
