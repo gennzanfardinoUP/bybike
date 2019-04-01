@@ -63,7 +63,7 @@ export class NewThingComponent implements OnInit, OnDestroy {
             this.router.navigate(['/part-one/all-stuff']);
             break;
           case 3:
-            this.router.navigate(['/default/all-stuff']);
+            this.router.navigate(['/all-stuff']);
             break;
         }
       }

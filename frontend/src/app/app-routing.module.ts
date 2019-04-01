@@ -32,10 +32,7 @@ const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'all-stuff' },
       { path: '**', redirectTo: 'all-stuff' }
     ]
-  },
-  { path: 'default', component: DefaultComponent },
-  { path: '', pathMatch: 'full', component: DefaultComponent },
-  { path: '**', redirectTo: '' }
+  }
 ];
 
 @NgModule({

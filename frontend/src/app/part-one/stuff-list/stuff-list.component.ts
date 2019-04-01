@@ -44,8 +44,8 @@ export class StuffListComponent implements OnInit, OnDestroy {
     if (this.part === 1) {
       this.router.navigate(['/part-one/thing/' + id]);
     } else if (this.part === 3) {
-      this.router.navigate(['/default/thing/' + id]);
-    } 
+      this.router.navigate(['/thing/' + id]);
+    }
   }
 
   ngOnDestroy() {

@@ -29,7 +29,7 @@ import { AuthInterceptor } from './interceptors/auth-interceptor';
     SingleThingComponent,
     ModifyThingComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
