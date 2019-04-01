@@ -9,8 +9,6 @@ import { ModifyThingComponent } from './part-one/modify-thing/modify-thing.compo
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AuthGuard } from './services/auth-guard.service';
-import { NewThingWithUploadComponent } from './part-four/new-thing-with-upload/new-thing-with-upload.component';
-import { ModifyThingWithUploadComponent } from './part-four/modify-thing-with-upload/modify-thing-with-upload.component';
 
 const routes: Routes = [
   { path: '', component: DefaultComponent,

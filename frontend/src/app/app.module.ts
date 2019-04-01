@@ -15,8 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
-import { NewThingWithUploadComponent } from './part-four/new-thing-with-upload/new-thing-with-upload.component';
-import { ModifyThingWithUploadComponent } from './part-four/modify-thing-with-upload/modify-thing-with-upload.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
 import { RegisterComponent } from './register/register.component';
@@ -32,9 +30,7 @@ import { RegisterComponent } from './register/register.component';
     SingleThingComponent,
     ModifyThingComponent,
     LoginComponent,
-    SignupComponent,
-    NewThingWithUploadComponent,
-    ModifyThingWithUploadComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
