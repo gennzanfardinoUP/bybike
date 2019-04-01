@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>GoBike</title>
+    <title>ByBike</title>
   </head>
   <body>
-    <div class="rectangle" style="padding:19px; color: #fff; font-weight: bold; font-size: 22px;">Lets Go!</div>
+    <div class="rectangle">Lets Go!</div>
     <div class="login">
-	<h1>Login</h1>
+	<!-- <h1>Login</h1> -->
     <form method="post">
       <span class="circle">
-    	<input type="text" name="u" placeholder="Username" required="required" style="text-align:center;"/>
+    	<input class="usernameInput" type="text" name="u" placeholder="Username" required="required"/>
       </span>
       <span class="circlepass">
-        <input type="password" name="p" placeholder="Password" required="required" style="text-align:center;margin-top:5px;"/></span>
+        <input class="inputgap" type="password" name="p" placeholder="Password" required="required"/></span>
         <button type="submit" class="btn btn-primary btn-block btn-large">Enter</button>
       </form>
-      <a href="register.html">Register Here</a>
+      <a class="registerDirectory" href="register.html">Register Here</a>
     </div>
   </body>
 </html>
