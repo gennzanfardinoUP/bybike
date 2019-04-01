@@ -8,9 +8,7 @@
 
 .thing-pane {
   transition: transform 0.3s ease-in-out;
-  position: absolute;
-  top: 40%;
-  left: 30%;
+  position: relative;
   width: 800px;
   height: 80px;
 //  margin: 20px;
@@ -26,7 +24,7 @@
 }
 
 
-.thing-info {
+.thing-info
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -50,7 +48,6 @@
 	position: absolute;
 	top: 15%;
 	left: 26%;
->>>>>>> 3c71672c9a9d3c4849c6155e507139a09b66c33b
 }
 
 #innersuggestionbox{
