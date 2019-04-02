@@ -15,11 +15,11 @@ export class AuthService {
   constructor(private router: Router,
               private http: HttpClient) {}
 
-  createNewUser(username: string, email: string, password: string) {
+  createNewUser(email: string, password: string) {
     return new Promise((resolve, reject) => {
       this.http.post(
         'http://localhost:3000/api/auth/signup',
-        { username: username, email: email, password: password })
+        { email: email, password: password })
         .subscribe(
           () => {
             this.login(email, password).then(
