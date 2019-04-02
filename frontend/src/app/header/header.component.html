@@ -4,10 +4,10 @@
   </h1>
   <ul class="header-navigation">
     <li class="header-navigation-item" *ngIf="isAuth">
-      <a class="header-link" routerLink="/all-stuff" routerLinkActive="active">Locations</a>
+      <a class="header-link" routerLink="/all-locations" routerLinkActive="active">Locations</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
-      <a class="header-link" routerLink="/new-thing" routerLinkActive="active">Admin</a>
+      <a class="header-link" routerLink="/new-location" routerLinkActive="active">Admin</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
       <a class="header-link" style="cursor: pointer" (click)="onLogout()">LogOut</a>

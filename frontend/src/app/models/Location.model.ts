@@ -1,9 +1,8 @@
 export class Location {
-    _userid: string;
-    locid: string;
-    locname: string;
-    locaddress: string;
-    locimageUrl: string;
-    coordinates: string;
-    overallrating: number;
+  _id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  price: number;
+  userId: string;
 }
