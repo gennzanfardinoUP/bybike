@@ -6,13 +6,22 @@
   justify-content: center;
 }
 
+.location-box{
+  position: absolute;
+  top: 20%;
+  display: inline-block;
+  left: 42.5%;
+  background-color: white;
+  height: 50%;
+  width: 41.75%;
+}
+
 .location-pane {
   transition: transform 0.3s ease-in-out;
-  position: absolute;
-  top: 40%;
-  left: 30%;
+  position: relative;
   width: 800px;
   height: 80px;
+  margin-top: 3%;
 //  margin: 20px;
 //  margin-left: 500px;
   background-size: 25% 100%;
