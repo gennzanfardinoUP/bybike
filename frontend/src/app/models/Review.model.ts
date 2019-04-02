@@ -1,11 +1,12 @@
 export class Review {
-  _userid: string;
-  locid: string;
-  locname: string;
-  locaddressj: string
-  locimageUrl: string;
-  coordinates: string; 
-  overallrating: number;
-  userrating: number;
-  reviewdescription: string;
+  _id: string;
+  userId: string;
+  locId: string;
+  locName: string;
+  locAddress: string
+  locImageUrl: string;
+  coordinates: string;
+  overallRating: number;
+  userRating: number;
+  reviewDescription: string;
 }

@@ -1,0 +1,21 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<p class="text-center" *ngIf="reviews.length <= 0 && !loading">No reviews for sale!</p>
+<div class="reviews-list" *ngIf="reviews.length >= 0">
+  <div class="review-box">
+  <div class="review-pane"
+       *ngFor="let review of reviews"
+       [ngClass]="{'open': review._id === chosenId}"
+       [ngStyle]="{'background-image': 'url(' + review.imageUrl + ');background-size:  30% 100%;'}"
+       (click)="onProductClicked(review._id)">
+       <h3 style="padding-left: 25%">
+         {{ review.title }}
+       </h3>
+       <div class="review-info">
+         <h5>
+
+           {{ review?.description }} {{ review.price / 5 }}
+         </h5>
+       </div>
+  </div>
+  </div>
+</div>

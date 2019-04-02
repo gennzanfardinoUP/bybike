@@ -23,6 +23,7 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
     this.state.mode$.next('form');
     this.signupForm = this.formBuilder.group({
+      username: [null, Validators.required],
       email: [null, [Validators.required, Validators.email]],
       password: [null, Validators.required]
     });
@@ -30,9 +31,10 @@ export class SignupComponent implements OnInit {
 
   onSignup() {
     this.loading = true;
+    const username = this.signupForm.get('username').value;
     const email = this.signupForm.get('email').value;
     const password = this.signupForm.get('password').value;
-    this.auth.createNewUser(email, password).then(
+    this.auth.createNewUser(username, email, password).then(
       () => {
         this.loading = false;
         if (this.state.part === 3) {

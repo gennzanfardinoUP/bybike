@@ -1,0 +1,14 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading">
+  <button class="btn btn-link" (click)="onGoBack()"><< Back</button>
+  <div class="single-review-pane">
+    <img [src]="review?.imageUrl" alt="">
+    <div class="single-review-info">
+      <h1>{{ review?.title }}</h1>
+      <h2 class="single-review-price">{{ review?.price / 5 }}</h2>
+      <p>{{ review?.description }}</p>
+      <button class="btn btn-success m-1" (click)="onModify()" [disabled]="part >= 3 && userId !== review?.userId">Modify</button>
+      <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="part >= 3 && userId !== review?.userId">Delete</button>
+    </div>
+  </div>
+</div>

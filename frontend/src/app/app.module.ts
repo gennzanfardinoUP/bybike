@@ -18,6 +18,11 @@ import { NewLocationComponent } from './crud/new-location/new-location.component
 import { SingleLocationComponent } from './crud/single-location/single-location.component';
 import { ModifyLocationComponent } from './crud/modify-location/modify-location.component';
 
+import { ReviewsListComponent } from './crud/reviews-list/reviews-list.component';
+import { NewReviewComponent } from './crud/new-review/new-review.component';
+import { SingleReviewComponent } from './crud/single-review/single-review.component';
+import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material';
 import { LoginComponent } from './auth/login/login.component';
@@ -43,6 +48,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NewLocationComponent,
     SingleLocationComponent,
     ModifyLocationComponent,
+
+    ReviewsListComponent,
+    NewReviewComponent,
+    SingleReviewComponent,
+    ModifyReviewComponent,
 
     LoginComponent,
     SignupComponent

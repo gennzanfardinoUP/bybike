@@ -13,6 +13,11 @@ import { NewLocationComponent } from './crud/new-location/new-location.component
 import { SingleLocationComponent } from './crud/single-location/single-location.component';
 import { ModifyLocationComponent } from './crud/modify-location/modify-location.component';
 
+import { ReviewsListComponent } from './crud/reviews-list/reviews-list.component';
+import { NewReviewComponent } from './crud/new-review/new-review.component';
+import { SingleReviewComponent } from './crud/single-review/single-review.component';
+import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
+
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AuthGuard } from './services/auth-guard.service';
