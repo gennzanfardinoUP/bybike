@@ -21,29 +21,7 @@
     </ul>
   </div>
 
-  <ul class="usernavlist">
-    <li class="usernavalign">
-      <a onclick="favouritesRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/favouriteicon.png" />
-        <p class="usernav"> Favourites</p>
-      </a>
-    </li>
-    <li class="usernavalign">
-      <a onclick="bookmarksRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/bookmarkicon.png" />
-        <p class="usernav"> Bookmarks</p>
-      </a>
-    </li>
-    <li class="usernavalign">
-      <a onclick="photosRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/cameraicon.png" />
-        <p class="usernav"> Photos</p>
-      </a>
-    </li>
-    <li class="usernavalign">
-      <a onclick="placesRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/mapicon.png" />
-        <p class="usernav"> Places</p>
-      </a>
-    </li>
-  </ul>
-</div>
+
 <div id="suggestionbox">
   <mat-spinner *ngIf="loading"></mat-spinner>
   <p class="text-center" *ngIf="stuff.length <= 0 && !loading">No stuff for sale!</p>
