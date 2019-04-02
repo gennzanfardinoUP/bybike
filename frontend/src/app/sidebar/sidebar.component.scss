@@ -5,6 +5,15 @@
 	display: inline-block;
 	border-radius: 10px;
   float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+#first {
+  width: 100%;
+  height: 95%;
+  background: white;
+  display: inline-block;
+  border-radius: 5px;
 }
 #second{
 	width: 100%;
@@ -12,4 +21,58 @@
 	background: #008FFF;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+}
+.usernav{
+	color: grey;
+	font-size: 25px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.usernavlist {
+  list-style-type: none;
+	margin-top: 18%;
+	display: flex;
+	flex-direction: column;
+}
+
+.usernavalign{
+  margin: 10px;
+	text-align: left;
+	padding-left: 18%;
+}
+
+.usernavicon{
+	position: relative;
+	top: 5px;
+  right: 5px;
+    display: inline-block;
+}
+
+
+
+
+.dot {
+	height: 27%;
+  width: 25%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 25%;
+  margin-left: 5%;
+}
+
+.userheadicon{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 100%;
+}
+
+.username{
+	font-size: x-large;
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	left: 10px
 }
