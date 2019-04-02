@@ -5,8 +5,9 @@ exports.createLocation = (req, res, next) => {
     title: req.body.title,
     description: req.body.description,
     imageUrl: req.body.imageUrl,
-    //price: req.body.price,
-    userId: req.body.userId
+    userId: req.body.userId,
+    ratingNumber: req.body.ratingNumber
+
   });
   location.save().then(
     () => {
@@ -45,8 +46,8 @@ exports.modifyLocation = (req, res, next) => {
     title: req.body.title,
     description: req.body.description,
     imageUrl: req.body.imageUrl,
-    //price: req.body.price,
-    userId: req.body.userId
+    userId: req.body.userId,
+    ratingNumber: req.body.ratingNumber
   });
   Location.updateOne({_id: req.params.id}, location).then(
     () => {

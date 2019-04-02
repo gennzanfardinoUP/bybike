@@ -5,7 +5,7 @@ const locationSchema = mongoose.Schema({
   description: { type: String, required: true },
   imageUrl: { type: String, required: true },
   userId: { type: String, required: true },
-  price: { type: Number, required: false },
+  ratingNumber: { type: Number, required: false }
 });
 
 module.exports = mongoose.model('Location', locationSchema);
