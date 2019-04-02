@@ -170,7 +170,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 
 
-@media only screen and (min-width: 1082px) {
+@media only screen and (max-width: 512px) {
 	.homepageButton, .favouritesButton {
 		min-height: 20px;
 		min-width: 50px;
@@ -191,9 +191,9 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
   margin-left: 20px;
   margin-top: 25px;
 	display: inline-block;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-#first #second{
+#second{
 	width: 100%;
 	height: 40%;
 	background: #008FFF;
@@ -541,4 +541,5 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 	position: absolute;
 	top: 23%;
 	left: 26%;
+}
 }
