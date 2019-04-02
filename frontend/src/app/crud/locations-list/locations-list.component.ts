@@ -42,7 +42,6 @@ export class LocationsListComponent implements OnInit, OnDestroy {
 
   onProductClicked(id: string) {
     if (this.part === 1) {
-      this.router.navigate(['/crud/location/' + id]);
     } else if (this.part === 3) {
       this.router.navigate(['/location/' + id]);
     }

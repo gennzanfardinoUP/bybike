@@ -4,35 +4,15 @@
   <div class="location-pane"
        *ngFor="let location of locations"
        [ngClass]="{'open': location._id === chosenId}"
-       [ngStyle]="{'background-image': 'url(' + location.imageUrl + ')'}"
+       [ngStyle]="{'background-image': 'url(' + location.imageUrl + ');background-size:  30% 100%;'}"
        (click)="onProductClicked(location._id)">
-    <div class="location-info">
-      <h3>
-        {{ location.title }}
-      </h3>
-      <h5>{{ location.price / 5 }}</h5>
-    </div>
+       <h3 style="padding-left: 25%">
+         {{ location.title }}
+         <h5 style="padding: 0px;   margin: 0px; display:inline">
+           {{ location?.description }} {{ location.price / 5 }}
+         </h5>
+       </h3>
+
+    <!--<div class="location-info"></div>-->
   </div>
 </div>
-
-
-<div id="first">
-    <div id="second"><span class="dot"><img class="userheadicon" src="img/user.png"></span>
-      <p class="username" style="color:white"> Guy whocantcycle </p>
-    </div>
-
-    <ul class="usernavlist">
-      <li class="usernavalign">
-        <a onclick="favouritesRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/favouriteicon.png"/><p class="usernav"> Favourites</p></a>
-      </li>
-      <li class="usernavalign">
-        <a onclick="bookmarksRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/bookmarkicon.png"/><p class="usernav"> Bookmarks</p></a>
-      </li>
-      <li class="usernavalign">
-        <a onclick="photosRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/cameraicon.png"/><p class="usernav"> Photos</p></a>
-      </li>
-      <li class="usernavalign">
-        <a onclick="placesRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="img/mapicon.png"/><p class="usernav"> Places</p></a>
-      </li>
-    </ul>
-  </div>

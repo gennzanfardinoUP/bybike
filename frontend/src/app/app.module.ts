@@ -24,6 +24,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AuthInterceptor } from './interceptors/auth-interceptor';
     PartOneComponent,
     DefaultComponent,
     HeaderComponent,
+    SidebarComponent,
 
     StuffListComponent,
     NewThingComponent,
@@ -43,7 +45,8 @@ import { AuthInterceptor } from './interceptors/auth-interceptor';
     ModifyLocationComponent,
 
     LoginComponent,
-    SignupComponent,
+    SignupComponent
+
   ],
   imports: [
     BrowserModule,

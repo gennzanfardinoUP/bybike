@@ -34,8 +34,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.partSub = this.state.part$.subscribe(
       (part) => {
         this.part = part;
-        switch (part) {
-          case 1:
+        switch (part) {          case 1:
             this.partString = 'part-one';
             break;
           case 3:
