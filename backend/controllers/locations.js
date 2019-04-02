@@ -1,14 +1,14 @@
-const Thing = require('../models/thing');
+const Location = require('../models/location');
 
-exports.createThing = (req, res, next) => {
-  const thing = new Thing({
+exports.createLocation = (req, res, next) => {
+  const location = new Location({
     title: req.body.title,
     description: req.body.description,
     imageUrl: req.body.imageUrl,
     //price: req.body.price,
     userId: req.body.userId
   });
-  thing.save().then(
+  location.save().then(
     () => {
       res.status(201).json({
         message: 'Post saved successfully!'
@@ -23,12 +23,12 @@ exports.createThing = (req, res, next) => {
   );
 };
 
-exports.getOneThing = (req, res, next) => {
-  Thing.findOne({
+exports.getOneLocation = (req, res, next) => {
+  Location.findOne({
     _id: req.params.id
   }).then(
-    (thing) => {
-      res.status(200).json(thing);
+    (location) => {
+      res.status(200).json(location);
     }
   ).catch(
     (error) => {
@@ -39,8 +39,8 @@ exports.getOneThing = (req, res, next) => {
   );
 };
 
-exports.modifyThing = (req, res, next) => {
-  const thing = new Thing({
+exports.modifyLocation = (req, res, next) => {
+  const location = new Location({
     _id: req.params.id,
     title: req.body.title,
     description: req.body.description,
@@ -48,10 +48,10 @@ exports.modifyThing = (req, res, next) => {
     //price: req.body.price,
     userId: req.body.userId
   });
-  Thing.updateOne({_id: req.params.id}, thing).then(
+  Location.updateOne({_id: req.params.id}, location).then(
     () => {
       res.status(201).json({
-        message: 'Thing updated successfully!'
+        message: 'Location updated successfully!'
       });
     }
   ).catch(
@@ -63,8 +63,8 @@ exports.modifyThing = (req, res, next) => {
   );
 };
 
-exports.deleteThing = (req, res, next) => {
-  Thing.deleteOne({_id: req.params.id}).then(
+exports.deleteLocation = (req, res, next) => {
+  Location.deleteOne({_id: req.params.id}).then(
     () => {
       res.status(200).json({
         message: 'Deleted!'
@@ -79,10 +79,10 @@ exports.deleteThing = (req, res, next) => {
   );
 };
 
-exports.getAllStuff = (req, res, next) => {
-  Thing.find().then(
-    (things) => {
-      res.status(200).json(things);
+exports.getAllLocations = (req, res, next) => {
+  Location.find().then(
+    (locations) => {
+      res.status(200).json(locations);
     }
   ).catch(
     (error) => {

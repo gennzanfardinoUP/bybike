@@ -12,11 +12,15 @@ const Thing = require('./models/thing');
 
 const stuffRoutes = require('./routes/stuff');
 
+const Location = require('./models/location');
+
+const locationsRoutes = require('./routes/locations');
+
 const userRoutes  = require('./routes/user');
 
 mongoose.connect('mongodb+srv://root:root@team3d-pscfn.mongodb.net/test?retryWrites=true')
   .then(() => {
-    console.log('Successfully connected to MongoDB Atlas!');
+    console.log('Successfully connected to team3d MongoDB Atlas!');
   })
   .catch((error) => {
     console.log('Unable to connect to MongoDB Atlas!');
@@ -33,6 +37,9 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.use('/api/stuff', stuffRoutes);
+
+app.use('/api/locations', locationsRoutes);
+
 app.use('/api/auth',  userRoutes);
 
 
