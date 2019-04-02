@@ -21,8 +21,7 @@ export class ReviewsService {
       coordinates: '123, 123',
       overallRating: 5,
       userRating: 4,
-      reviewDescription: 'This place was amazing.';
-    },
+      reviewDescription: 'This place was amazing.';},
     {
       _id: '0010101',
       userId: 'ASB112162768',
