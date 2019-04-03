@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PartOneComponent } from './part-one/part-one.component';
 import { DefaultComponent } from './default/default.component';
+import { ReportfaultComponent } from './reportfault/reportfault.component';
 
 import { StuffListComponent } from './part-one/stuff-list/stuff-list.component';
 import { NewThingComponent } from './part-one/new-thing/new-thing.component';
@@ -40,8 +41,10 @@ const routes: Routes = [
   { path: '', component: DefaultComponent,
     children: [
       { path: 'new-location', component: NewLocationComponent, canActivate: [AuthGuard] },
+      { path: 'report', component: ReportfaultComponent, canActivate: [AuthGuard] },
       { path: 'all-locations', component: LocationsListComponent, canActivate: [AuthGuard] },
       { path: 'location/:id', component: SingleLocationComponent, canActivate: [AuthGuard] },
+      { path: 'location/:id/new-review', component: NewReviewComponent, canActivate: [AuthGuard] },
       { path: 'modify-location/:id', component: ModifyLocationComponent, canActivate: [AuthGuard] },
       { path: 'auth/login', component: LoginComponent },
       { path: 'auth/signup', component: SignupComponent },

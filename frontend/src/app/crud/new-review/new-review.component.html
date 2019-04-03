@@ -1,5 +1,8 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2 main">
+  <div class="locationbarshort">
+    <h1>Name of the location...</h1>
+  </div>
   <form [formGroup]="reviewForm">
     <div class="form-group">
       <label for="title">Title</label>
@@ -14,15 +17,18 @@
       <textarea name="description"
                 id="description"
                 cols="30" rows="7"
-                class="form-control"
+                class="form-control reviewtextbox"
                 formControlName="description"
-                placeholder="Describe your product (type, quality, etc.)"></textarea>
+                placeholder="What was your experience like? Add review here..."></textarea>
     </div>
     <div class="form-group">
       <label for="imageUrl">Image URL</label>
       <input type="text" placeholder="http://..." id="imageUrl" formControlName="imageUrl" class="form-control">
     </div>
-    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="reviewForm.invalid">Submit</button>
+    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="reviewForm.invalid">Submit Review</button>
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
   </form>
 </div>
+
+<!-- <textarea type="text" id= "reviewtextbox" placeholder=""></textarea> -->
+<!-- Make id to class reviewtextbox -->
