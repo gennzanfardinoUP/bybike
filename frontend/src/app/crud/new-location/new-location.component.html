@@ -1,14 +1,14 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div *ngIf="!loading" class="col-sm-6 offset-sm-3 mt-2 main">
-  <form [formGroup]="locationForm">
+  <form [formGroup]="locationForm" style="margin-top: 4%; width: 140%; color: white;">
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" placeholder="What are you selling?" id="title" formControlName="title" class="form-control">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="price">Preferred path</label>
       <input type="number" id="price" class="form-control" formControlName="price" min="0">
-    </div>
+    </div> -->
     <div class="form-group">
       <label for="description">Description</label>
       <textarea name="description"
@@ -22,7 +22,8 @@
       <label for="imageUrl">Image URL</label>
       <input type="text" placeholder="http://..." id="imageUrl" formControlName="imageUrl" class="form-control">
     </div>
-    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="locationForm.invalid">Submit</button>
+    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="locationForm.invalid" style="margin-left: 38%;
+    width: 25%;">Submit</button>
     <p class="alert-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
   </form>
 </div>

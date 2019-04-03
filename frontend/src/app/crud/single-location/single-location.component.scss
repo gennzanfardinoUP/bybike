@@ -6,7 +6,7 @@
 
 img {
   position: relative;
-  width: 100%;
+  width: 25%;
 }
 
 .single-location-info {
@@ -15,4 +15,17 @@ img {
 
 .single-location-price {
   color: #6eb5ff;
+}
+
+.review-box{
+  position: absolute;
+    /* top: 20%; */
+    /* color: white; */
+    display: inline-block;
+    left: 100%;
+    top: 130%;
+    background-color: #008FFF;
+    height: 20%;
+    width: 30%;
+    text-align: center;
 }

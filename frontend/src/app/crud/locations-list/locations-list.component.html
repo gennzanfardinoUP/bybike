@@ -2,20 +2,23 @@
 <p class="text-center" *ngIf="locations.length <= 0 && !loading">No locations for sale!</p>
 <div class="locations-list" *ngIf="locations.length >= 0">
   <div class="location-box">
-  <div class="location-pane"
+  <div class="location-pane" style="height:20%;"
        *ngFor="let location of locations"
        [ngClass]="{'open': location._id === chosenId}"
-       [ngStyle]="{'background-image': 'url(' + location.imageUrl + ');background-size:  30% 100%;'}"
+       [ngStyle]="{}"
        (click)="onProductClicked(location._id)">
-       <h3 style="padding-left: 25%">
-         {{ location.title }}
-       </h3>
-       <div class="location-info">
-         <h5>
+         <div>
+           <img src="{{location.imageUrl}}" style="max-width:17%; max-height:15%;">
+         <h1 style="padding-left: 5%; display:inline;">
+           {{ location.title }}
+         </h1>
+         <div class="location-info" style="padding-left: 25%;">
+           <h2>
 
-           {{ location?.description }} {{ location.price / 5 }}
-         </h5>
-       </div>
+             {{ location?.description }}
+           </h2>
+         </div>
+         </div>
   </div>
   </div>
 </div>

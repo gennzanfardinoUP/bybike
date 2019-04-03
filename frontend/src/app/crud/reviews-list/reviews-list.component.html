@@ -3,7 +3,6 @@
 <div class="reviews-list" *ngIf="reviews.length >= 0">
   <div class="review-box">
 
-      <h1>fofoofo</h1>
   <div class="review-pane"
        *ngFor="let review of reviews"
        [ngClass]="{'open': review._id === chosenId}"
@@ -15,15 +14,20 @@
        <div class="review-info">
          <h5>
 
-           {{ review?.description }} {{ review.price / 5 }}
+           {{ review?.description }}
          </h5>
        </div>
   </div>
   <div id="addrating" *ngIf="!isAuth">
     <a class="" routerLink="/location/:id/new-review" routerLinkActive="active" style="text-decoration: none">
-      <h1 class="clicktext" >Add rating</h1>
+      <h1 class="clicktext" style="position: absolute;
+    display: inline-block;
+    left: 150%;
+    top: 225%;
+    background-color: #008FFF;
+    height: 25%;
+    color: white;
+    width: 58%;
+    text-align: center;" >Add Review</h1>
     </a>
-  </div>
-  <div id="readreviews"><a href="#"></a> <h1 class="clicktext">Read reviews</h1> </div>
-  </div>
 </div>

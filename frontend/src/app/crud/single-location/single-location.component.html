@@ -5,13 +5,12 @@
     <img [src]="location?.imageUrl" alt="">
     <div class="single-location-info">
       <h1>{{ location?.title }}</h1>
-      <h2 class="single-location-price">{{ location?.price / 5 }}</h2>
       <p>{{ location?.description }}</p>
       <button class="btn btn-success m-1" (click)="onModify()" [disabled]="part >= 3 && userId !== location?.userId">Modify</button>
       <button class="btn btn-danger m-1" (click)="onDelete()" [disabled]="part >= 3 && userId !== location?.userId">Delete</button>
-
-      <app-reviews-list></app-reviews-list>
       
+      <app-reviews-list></app-reviews-list>
+
     </div>
   </div>
 </div>
