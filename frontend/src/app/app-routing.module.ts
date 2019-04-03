@@ -16,7 +16,7 @@ import { ModifyLocationComponent } from './crud/modify-location/modify-location.
 import { ReviewsListComponent } from './crud/reviews-list/reviews-list.component';
 import { NewReviewComponent } from './crud/new-review/new-review.component';
 import { SingleReviewComponent } from './crud/single-review/single-review.component';
-import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
+//import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
 
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';

@@ -47,12 +47,13 @@ export class NewReviewComponent implements OnInit, OnDestroy {
   onSubmit() {
     this.loading = true;
     const review = new Review();
+    /*
     review.title = this.reviewForm.get('title').value;
     review.description = this.reviewForm.get('description').value;
     review.price = this.reviewForm.get('price').value * 100;
     review.imageUrl = this.reviewForm.get('imageUrl').value;
     review._id = new Date().getTime().toString();
-    review.userId = this.userId;
+    review.userId = this.userId;*/
     this.reviewsService.createNewReview(review).then(
       () => {
         this.reviewForm.reset();

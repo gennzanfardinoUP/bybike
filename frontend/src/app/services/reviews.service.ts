@@ -21,7 +21,7 @@ export class ReviewsService {
       coordinates: '123, 123',
       overallRating: 5,
       userRating: 4,
-      reviewDescription: 'This place was amazing.';},
+      reviewDescription: 'This place was amazing.'},
     {
       _id: '0010101',
       userId: 'ASB112162768',
@@ -32,7 +32,7 @@ export class ReviewsService {
       coordinates: '123, 123',
       overallRating: 5,
       userRating: 4,
-      reviewDescription: 'This place was amazing.';},
+      reviewDescription: 'This place was amazing.'},
   ];
   public reviews$ = new Subject<Review[]>();
 
@@ -84,7 +84,7 @@ export class ReviewsService {
     return new Promise((resolve, reject) => {
       const reviewData = new FormData();
       reviewData.append('review', JSON.stringify(review));
-      reviewData.append('image', image, review.title);
+      //reviewData.append('image', image, review.title);
       this.http.post('http://localhost:3000/api/reviews', reviewData).subscribe(
         (response) => {
           resolve(response);
@@ -113,12 +113,12 @@ export class ReviewsService {
     return new Promise((resolve, reject) => {
       let reviewData: Review | FormData;
       if (typeof image === 'string') {
-        review.imageUrl = image;
+        //review.imageUrl = image;
         reviewData = review;
       } else {
         reviewData = new FormData();
         reviewData.append('review', JSON.stringify(review));
-        reviewData.append('image', image, review.title);
+        //reviewData.append('image', image, review.title);
       }
       this.http.put('http://localhost:3000/api/reviews/' + id, reviewData).subscribe(
         (response) => {

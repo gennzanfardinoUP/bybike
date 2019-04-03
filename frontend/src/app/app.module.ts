@@ -21,7 +21,7 @@ import { ModifyLocationComponent } from './crud/modify-location/modify-location.
 import { ReviewsListComponent } from './crud/reviews-list/reviews-list.component';
 import { NewReviewComponent } from './crud/new-review/new-review.component';
 import { SingleReviewComponent } from './crud/single-review/single-review.component';
-import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
+//import { ModifyReviewComponent } from './crud/modify-review/modify-review.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material';
@@ -52,7 +52,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ReviewsListComponent,
     NewReviewComponent,
     SingleReviewComponent,
-    ModifyReviewComponent,
+    //ModifyReviewComponent,
 
     LoginComponent,
     SignupComponent

@@ -45,12 +45,12 @@ export class ModifyReviewComponent implements OnInit {
       (params) => {
         this.reviewsService.getReviewById(params.id).then(
           (review: Review) => {
-            this.review = review;
+            /*this.review = review;
             this.reviewForm.get('title').setValue(this.review.title);
             this.reviewForm.get('description').setValue(this.review.description);
             this.reviewForm.get('price').setValue(this.review.price / 100);
             this.reviewForm.get('imageUrl').setValue(this.review.imageUrl);
-            this.loading = false;
+            this.loading = false;*/
           }
         );
       }
@@ -60,12 +60,12 @@ export class ModifyReviewComponent implements OnInit {
   onSubmit() {
     this.loading = true;
     const review = new Review();
-    review.title = this.reviewForm.get('title').value;
+    /*review.title = this.reviewForm.get('title').value;
     review.description = this.reviewForm.get('description').value;
     review.price = this.reviewForm.get('price').value * 100;
     review.imageUrl = this.reviewForm.get('imageUrl').value;
     review._id = new Date().getTime().toString();
-    review.userId = this.review.userId;
+    review.userId = this.review.userId;*/
     this.reviewsService.modifyReview(this.review._id, review).then(
       () => {
         this.reviewForm.reset();
