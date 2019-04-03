@@ -17,6 +17,10 @@
         <li class="usernavalign">
           <a onclick="placesRedirect" href="#" style="text-decoration: none"><img class="usernavicon" src="https://img.icons8.com/windows/32/000000/compass.png"/><p class="usernav"> Places</p></a>
         </li>
-      </ul>
+
+        <li class="usernavalign" *ngIf="!isAuth">
+          <a class="" routerLink="/report" routerLinkActive="active" style="text-decoration: none"><img class="usernavicon" src="https://img.icons8.com/windows/32/000000/compass.png"/><p class="usernav"> Report Faults</p></a>
+        </li>
+    </ul>
   </div>
 </div>
