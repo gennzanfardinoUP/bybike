@@ -59,3 +59,23 @@ a {
   flex-direction: row-reverse;
   flex-grow: 1;
 }
+
+.header-title{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px){
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #0063FF;
+    color: white;
+    padding: 0.2rem 2%;
+  }
+
+  .header-title{
+    font-size: large;
+    font-weight: bold;
+  }
+}
