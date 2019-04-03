@@ -49,9 +49,6 @@
     display: inline-block;
 }
 
-
-
-
 .dot {
 	height: 27%;
   width: 25%;
@@ -75,4 +72,47 @@
 	position: relative;
 	bottom: 30px;
 	left: 10px
+}
+
+@media only screen and (max-width: 600px){
+
+  #first {
+    display: none;
+  }
+
+  #second{
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .usernav{
+    display: none;
+  }
+
+  .usernavlist {
+    display: none;
+  }
+
+  .usernavalign{
+    display: none;
+  }
+
+  .usernavicon{
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .userheadicon{
+    display: none;
+  }
+
+  .username{
+    display: none;
+  }
 }

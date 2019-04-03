@@ -9,7 +9,7 @@
 .thing-pane {
   transition: transform 0.3s ease-in-out;
   position: relative;
-  width: 800px;
+  width: 100%;
   height: 80px;
   margin: 20px;
   margin-left: 500px;
@@ -44,13 +44,20 @@
 	display: inline-block;
 	height: 78%;
 	width: 69%;
-	position: absolute;
-	top: 15%;
-	left: 26%;
+margin: auto;
 }
 
 #innersuggestionbox{
 	display: block;
 	width: 100%;
 	height: 20%;
+}
+@media only screen and (max-width: 600px){
+  #suggestionbox{
+  	background-color: white;
+  	display: inline-block;
+  	height: 78%;
+  	width: 69%;
+  	margin: auto;
+  }
 }
