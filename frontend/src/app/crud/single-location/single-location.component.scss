@@ -7,10 +7,12 @@
 img {
   position: relative;
   width: 25%;
+  margin-left: 2%
 }
 
 .single-location-info {
-  width: 100%;
+  width: 30%;
+  margin-left: 5%;
 }
 
 .single-location-price {
@@ -28,4 +30,41 @@ img {
     height: 20%;
     width: 30%;
     text-align: center;
+}
+
+#outerstarbox{
+  display: inline-block;
+  background-color: white;
+  height: 68%;
+  width: 93%;
+  max-width: 93%;
+  position: absolute;
+  top: 3%;
+  left: 36%;
+  border-radius: 10px;
+}
+
+.innerstarbox{
+	display: block;
+	width: 100%;
+	height: 20%;
+	background-color: white;
+	border-color: white;
+	border-bottom-color: black;
+	border-style: solid;
+}
+
+.backbutton{
+  margin-left: 67.5%;
+  width: 8%;
+  height: 10%;
+  margin-top: 0.7%;
+  background: #008FFF;
+  color: white;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+.backbutton :hover{
+  background-color: skyblue;
 }

@@ -64,3 +64,23 @@
 	width: 100%;
 	height: 20%;
 }
+
+.clicktext{
+  position: absolute;
+  display: inline-block;
+  left: 150%;
+  top: 110%;
+  background-color: #008FFF;
+  height: 25%;
+  color: white;
+  width: 58%;
+  text-align: center;
+}
+
+.clicktext :hover{
+  background-color: skyblue;
+}
+
+#addrating :hover{
+	background-color: skyblue;
+}
