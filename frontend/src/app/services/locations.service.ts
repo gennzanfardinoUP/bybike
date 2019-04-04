@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LocationsService {
 
+  locId: string;
   constructor(private http: HttpClient) {}
 
   private locations: Location[] = [
@@ -16,7 +17,6 @@ export class LocationsService {
       title: 'My location',
       description: 'All about my location',
       imageUrl: 'https://c.pxhere.com/photos/30/d6/photographer_camera_lens_slr_photography_hands-1079029.jpg!d',
-      price: 4900,
       userId: 'will'
     },
     {
@@ -24,7 +24,6 @@ export class LocationsService {
       title: 'Another location',
       description: 'All about my location',
       imageUrl: 'https://www.publicdomainpictures.net/pictures/10000/velka/1536-1249273362hbHb.jpg',
-      price: 2600,
       userId: 'will'
     },
   ];
@@ -52,6 +51,7 @@ export class LocationsService {
     return new Promise((resolve, reject) => {
       this.http.get('http://localhost:3000/api/locations/' + id).subscribe(
         (response) => {
+          this.locId=id;
           resolve(response);
         },
         (error) => {

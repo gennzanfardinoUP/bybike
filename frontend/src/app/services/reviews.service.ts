@@ -3,6 +3,8 @@ import { Subject } from 'rxjs';
 import { Review } from '../models/Review.model';
 import { HttpClient } from '@angular/common/http';
 
+import { LocationsService } from './locations.service';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,32 +17,24 @@ export class ReviewsService {
       _id: '001018201',
       userId: 'ASB112162768',
       locId: '120981371823',
-      locName: 'McDonalds',
-      locAddress: 'Commercial Road',
-      locImageUrl: 'https://www.publicdomainpictures.net/pictures/10000/velka/1536-1249273362hbHb.jpg',
-      coordinates: '123, 123',
-      overallRating: 5,
-      userRating: 4,
-      reviewDescription: 'This place was amazing.'},
+      title: 'Amazing location',
+      reviewDescription: 'This place was amazing. Trees and clean seaside'},
     {
-      _id: '0010101',
-      userId: 'ASB112162768',
-      locId: '120981371823',
-      locName: 'McDonalds',
-      locAddress: 'Commercial Road',
-      locImageUrl: 'https://www.publicdomainpictures.net/pictures/10000/velka/1536-1249273362hbHb.jpg',
-      coordinates: '123, 123',
-      overallRating: 5,
-      userRating: 4,
-      reviewDescription: 'This place was amazing.'},
+        _id: '02222201',
+        userId: 'ASB1u12162768',
+        locId: '1209881371823',
+        title: 'Amazing locations',
+        reviewDescription: 'This place was ok. Trees and clean seaside'},
   ];
   public reviews$ = new Subject<Review[]>();
 
-  getReviews() {
-    this.http.get('http://localhost:3000/api/reviews').subscribe(
+  getReviews(locId: string) {
+    this.http.get('http://localhost:3000/api/reviews/').subscribe(
       (reviews: Review[]) => {
         if (reviews) {
-          this.reviews = reviews;
+          this.reviews = reviews.filter(function( obj ) {
+          return obj.locId == locId;
+          });
           this.emitReviews();
         }
       },

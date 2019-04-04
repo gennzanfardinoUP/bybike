@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { StateService } from '../../services/state.service';
 import { ReviewsService } from '../../services/reviews.service';
+import { LocationsService } from '../../services/locations.service';
 import { Subscription } from 'rxjs';
 import { Review } from '../../models/Review.model';
 import { Router } from '@angular/router';
@@ -19,9 +20,12 @@ export class ReviewsListComponent implements OnInit, OnDestroy {
   private reviewsSub: Subscription;
   private partSub: Subscription;
 
+  private locId: string;
+
   constructor(private state: StateService,
               private reviewsService: ReviewsService,
-              private router: Router) { }
+              private router: Router
+              private loc: LocationsService) { }
 
   ngOnInit() {
     this.loading = true;
@@ -37,7 +41,7 @@ export class ReviewsListComponent implements OnInit, OnDestroy {
         this.part = part;
       }
     );
-    this.reviewsService.getReviews();
+    this.reviewsService.getReviews(this.loc.locId);
   }
 
   onProductClicked(id: string) {

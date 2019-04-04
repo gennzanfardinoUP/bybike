@@ -11,7 +11,6 @@ export class AuthService {
   isAuth$ = new BehaviorSubject<boolean>(false);
   token: string;
   userId: string;
-
   constructor(private router: Router,
               private http: HttpClient) {}
 

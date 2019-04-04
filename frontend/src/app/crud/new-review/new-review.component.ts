@@ -2,6 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { StateService } from '../../services/state.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Review } from '../../models/Review.model';
+
+import { LocationsService } from '../../services/locations.service';
 import { ReviewsService } from '../../services/reviews.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -18,6 +20,7 @@ export class NewReviewComponent implements OnInit, OnDestroy {
   public loading = false;
   public part: number;
   public userId: string;
+  public locId: string;
   public errorMessage: string;
 
   private partSub: Subscription;
@@ -26,15 +29,14 @@ export class NewReviewComponent implements OnInit, OnDestroy {
               private formBuilder: FormBuilder,
               private reviewsService: ReviewsService,
               private router: Router,
-              private auth: AuthService) { }
+              private auth: AuthService,
+              private loc: LocationsService) { }
 
   ngOnInit() {
     this.state.mode$.next('form');
     this.reviewForm = this.formBuilder.group({
       title: [null, Validators.required],
       description: [null, Validators.required],
-      price: [0, Validators.required],
-      imageUrl: [null, Validators.required]
     });
     this.partSub = this.state.part$.subscribe(
       (part) => {
@@ -42,18 +44,17 @@ export class NewReviewComponent implements OnInit, OnDestroy {
       }
     );
     this.userId = this.part >= 3 ? this.auth.userId : 'userID40282382';
+    this.locId = this.part >= 3 ? this.loc.locId : 'locID40282382';
   }
 
   onSubmit() {
     this.loading = true;
     const review = new Review();
-    /*
     review.title = this.reviewForm.get('title').value;
     review.description = this.reviewForm.get('description').value;
-    review.price = this.reviewForm.get('price').value * 100;
-    review.imageUrl = this.reviewForm.get('imageUrl').value;
     review._id = new Date().getTime().toString();
-    review.userId = this.userId;*/
+    review.userId = this.userId;
+    review.locId=this.locId;
     this.reviewsService.createNewReview(review).then(
       () => {
         this.reviewForm.reset();
@@ -64,7 +65,7 @@ export class NewReviewComponent implements OnInit, OnDestroy {
             this.router.navigate(['/crud/all-reviews']);
             break;
           case 3:
-            this.router.navigate(['/all-reviews']);
+            this.router.navigate(['/location/'+this.locId]);
             break;
         }
       }
