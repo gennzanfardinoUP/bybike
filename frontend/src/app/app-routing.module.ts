@@ -14,6 +14,8 @@ import { NewLocationComponent } from './crud/new-location/new-location.component
 import { SingleLocationComponent } from './crud/single-location/single-location.component';
 import { ModifyLocationComponent } from './crud/modify-location/modify-location.component';
 
+import { FavouritesComponent } from './favourites/favourites.component';
+
 import { ReviewsListComponent } from './crud/reviews-list/reviews-list.component';
 import { NewReviewComponent } from './crud/new-review/new-review.component';
 import { SingleReviewComponent } from './crud/single-review/single-review.component';
@@ -42,6 +44,7 @@ const routes: Routes = [
     children: [
       { path: 'new-location', component: NewLocationComponent, canActivate: [AuthGuard] },
       { path: 'report', component: ReportfaultComponent, canActivate: [AuthGuard] },
+      { path: 'favourites', component: FavouritesComponent, canActivate: [AuthGuard] },
       { path: 'all-locations', component: LocationsListComponent, canActivate: [AuthGuard] },
       { path: 'location/:id', component: SingleLocationComponent, canActivate: [AuthGuard] },
       { path: 'location/:id/new-review', component: NewReviewComponent, canActivate: [AuthGuard] },
