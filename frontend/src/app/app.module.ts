@@ -30,7 +30,6 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AuthInterceptor } from './interceptors/auth-interceptor';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ReportfaultComponent } from './reportfault/reportfault.component';
 
 @NgModule({
   declarations: [
@@ -56,8 +55,7 @@ import { ReportfaultComponent } from './reportfault/reportfault.component';
     //ModifyReviewComponent,
 
     LoginComponent,
-    SignupComponent,
-    ReportfaultComponent
+    SignupComponent
 
   ],
   imports: [
