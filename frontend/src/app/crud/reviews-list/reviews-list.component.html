@@ -1,9 +1,11 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
-<p class="text-center" *ngIf="reviews.length <= 0 && !loading">No reviews for sale!</p>
+<div class="addrating" *ngIf="!isAuth">
+    <a class="clicktext" routerLink="/location/:id/new-review" routerLinkActive="active">Add review</a>
+</div>
+<p class="text-center" *ngIf="reviews.length <= 0 && !loading">No reviews</p>
 <div class="reviews-list" *ngIf="reviews.length >= 0">
   <div class="review-box">
-
-  <div class="review-pane"
+    <div class="review-pane"
        *ngFor="let review of reviews"
        [ngClass]="{'open': review._id === chosenId}"
        [ngStyle]="{'background-image': 'url(' + review.imageUrl + ');background-size:  30% 100%;'}"
@@ -16,9 +18,6 @@
            {{ review?.description }}
          </h5>
        </div>
+     </div>
   </div>
-  <div id="addrating" *ngIf="!isAuth">
-    <a class="" routerLink="/location/:id/new-review" routerLinkActive="active" style="text-decoration: none">
-      <h1 class="clicktext">Add Review</h1>
-    </a>
 </div>
