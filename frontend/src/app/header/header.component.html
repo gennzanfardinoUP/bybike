@@ -22,11 +22,30 @@
       <a class="header-link" routerLink="/auth/signup" routerLinkActive="active">SignUp</a>
     </li>
   </ul>
-  <ul class="header-navigation nav-end">
-        <li class="header-navigation-item font-italic">
-      <a class="header-link" style="cursor:pointer" (click)="onBackHome()">HOME</a>
-    </li>
-  </ul>
+
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <ul>
+        <li class="header-navigation-item" *ngIf="isAuth">
+          <a class="header-link" routerLink="/all-locations" routerLinkActive="active">Locations</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="isAuth">
+          <a class="header-link" routerLink="/new-location" routerLinkActive="active">Admin</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="isAuth">
+          <a class="header-link" style="cursor: pointer" (click)="onLogout()">LogOut</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="!isAuth">
+          <a class="header-link" routerLink="/auth/login" routerLinkActive="active">LogIn</a>
+        </li>
+        <li class="header-navigation-item" *ngIf="!isAuth">
+          <a class="header-link" routerLink="/auth/signup" routerLinkActive="active">SignUp</a>
+        </li>
+      </ul>
+    </div>
+    <input class="header-searchbar" type="text" placeholder="Search.." *ngIf="isAuth">
+  </div>
 
 </header>
 

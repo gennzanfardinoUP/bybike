@@ -2,8 +2,6 @@
 <p class="text-center" *ngIf="reviews.length <= 0 && !loading">No reviews for sale!</p>
 <div class="reviews-list" *ngIf="reviews.length >= 0">
   <div class="review-box">
-
-      <h1>fofoofo</h1>
   <div class="review-pane"
        *ngFor="let review of reviews"
        [ngClass]="{'open': review._id === chosenId}"
@@ -19,11 +17,5 @@
          </h5>
        </div>
   </div>
-  <div id="addrating" *ngIf="!isAuth">
-    <a class="" routerLink="/location/:id/new-review" routerLinkActive="active" style="text-decoration: none">
-      <h1 class="clicktext" >Add rating</h1>
-    </a>
-  </div>
-  <div id="readreviews"><a href="#"></a> <h1 class="clicktext">Read reviews</h1> </div>
   </div>
 </div>
