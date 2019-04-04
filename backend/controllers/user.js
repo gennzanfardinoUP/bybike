@@ -2,6 +2,18 @@ const bcrypt =  require('bcrypt');
 const User =    require('../models/user');
 const jwt = require('jsonwebtoken');
 
+
+
+/**
+ * .signup
+ * This function handles the users registration details when they sign up,
+ * allowing the user to login to the main page. When the user creates a password
+ * it is encrypted against an autog-generated hash key.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
 exports.signup = (req, res, next) => {
   bcrypt.hash(req.body.password, 10).then(
     (hash) => {
@@ -27,7 +39,16 @@ exports.signup = (req, res, next) => {
   );
 };
 
-//token is generated temporary by a development string to encode it(to be replaced for production)
+/**
+ * This function allows the user login with existing credentials. The user's
+ * login details are checked agains our database, if they are correct
+ * credentials the user is taken to the homepage otherwise, the functions throws
+ * a (500) status error.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
 
 exports.login = (req, res, next) => {
   User.findOne({ email: req.body.email }).then(
@@ -44,16 +65,10 @@ exports.login = (req, res, next) => {
               error: new Error('Incorrect password!')
             });
           }
-          const token = jwt.sign(
-            { userId: user._id },
-            'RANDOM_TOKEN_SECRET',
-            { expiresIn: '24h' });
           res.status(200).json({
             userId: user._id,
-            username: user.username,
-            token: token
+            token: 'token'
           });
-
         }
       ).catch(
         (error) => {

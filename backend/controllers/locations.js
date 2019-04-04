@@ -1,5 +1,14 @@
 const Location = require('../models/location');
 
+/**
+ * This createLocation function refers to when an authorised user wants to add
+ * a listing to the list of locations that can be searched for.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
+
 exports.createLocation = (req, res, next) => {
   const location = new Location({
     title: req.body.title,
@@ -24,6 +33,16 @@ exports.createLocation = (req, res, next) => {
   );
 };
 
+
+/**
+ * The function getOneLocation exists to allow the system to fetch the details
+ * of a location based on the input of the location name.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
+
 exports.getOneLocation = (req, res, next) => {
   Location.findOne({
     _id: req.params.id
@@ -39,6 +58,15 @@ exports.getOneLocation = (req, res, next) => {
     }
   );
 };
+
+/**
+ * The function modifyLocation is used when an authorised user wants to modify
+ * the existing details of a location.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
 
 exports.modifyLocation = (req, res, next) => {
   const location = new Location({
@@ -64,6 +92,15 @@ exports.modifyLocation = (req, res, next) => {
   );
 };
 
+/**
+ * The deleteLocation function exists to allow authorised users delete locations
+ * from the existing list of locations.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
+
 exports.deleteLocation = (req, res, next) => {
   Location.deleteOne({_id: req.params.id}).then(
     () => {
@@ -79,6 +116,15 @@ exports.deleteLocation = (req, res, next) => {
     }
   );
 };
+
+/**
+ * The location list component calls the getAllLocations function to display an
+ * array of all locations.
+ * @param  {[type]}   req  [description]
+ * @param  {[type]}   res  [description]
+ * @param  {Function} next [description]
+ * @return {[type]}        [description]
+ */
 
 exports.getAllLocations = (req, res, next) => {
   Location.find().then(

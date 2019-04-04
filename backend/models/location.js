@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+/**
+ * Declares the locationSchema and their types.
+ */
+
 const locationSchema = mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
