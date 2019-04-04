@@ -1,16 +1,12 @@
 .reviews-grid {
   width: 100%;
-  //margin: auto;
   display: flex;
   flex-wrap: wrap;
-  //justify-content: center;
 }
 
 .review-list{
   position: absolute;
   display: inline-block;
-  //top: 10%;
-  //left: 26%;
   background-color: rgba(255, 255, 255, 0.7);
   height: 80%;
   width: 100%;
@@ -22,25 +18,20 @@
   width: 97%;
   height: 60%;
   margin-bottom: 2%;
-//  margin: 20px;
   margin-left: 1.5%;
   background-size: 25% 100%;
   background-position: left;
   box-shadow: 1px 1px 3px #333333;
   cursor: pointer;
   h1{
-    //padding-top:25%;
   }
   &:hover {
     transform: scale(1.03);
   }
 }
 
-
 .review-info {
   width: 100%;
-  //position: absolute;
-  //bottom: 0;
   height: 100%;
   background-color: rgba(100, 100, 250, 0.1);
   color: white;
@@ -51,38 +42,28 @@
   }
 }
 
-#suggestionbox{
-	background-color: white;
-	display: inline-block;
-	height: 78%;
-	width: 69%;
-	position: absolute;
-	top: 15%;
-	left: 26%;
-}
-
-#innersuggestionbox{
-	display: block;
-	width: 100%;
-	height: 20%;
-}
-
 .clicktext{
-  position: absolute;
   display: inline-block;
-  left: 150%;
-  top: 110%;
   background-color: #008FFF;
-  height: 25%;
   color: white;
-  width: 58%;
   text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .clicktext :hover{
   background-color: skyblue;
 }
 
-#addrating :hover{
+.addrating{
+  display: inline-block;
+  background-color: #008FFF;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.addrating :hover{
 	background-color: skyblue;
 }
