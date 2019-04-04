@@ -31,3 +31,9 @@ Open Windows Powershell
 npm init
 
 npm install --g
+
+
+
+
+
+Based from previous submissions, we intended to write this program in HTML,CSS, JavaScript and PHP. We then opted to using A mean stack due to people not being well versed in javascript. Initially, we where going to use minimal javascript and work mainly on html,css and php. However, when it came to implement and write the code for the prototype, we found it would be a lot more effecient and appropriate to include AngularJS, especially based on the fact that it helps to communicate backend and frontend. 
