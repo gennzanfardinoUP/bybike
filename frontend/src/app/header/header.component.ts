@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private modeSub: Subscription;
   //private partSub: Subscription;
   private isAuthSub: Subscription;
+  
 
   constructor(private state: StateService,
               private auth: AuthService,

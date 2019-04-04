@@ -50,8 +50,10 @@ exports.login = (req, res, next) => {
             { expiresIn: '24h' });
           res.status(200).json({
             userId: user._id,
+            username: user.username,
             token: token
           });
+
         }
       ).catch(
         (error) => {
