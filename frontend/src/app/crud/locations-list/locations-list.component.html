@@ -1,5 +1,5 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
-<p class="text-center" *ngIf="locations.length <= 0 && !loading">No locations for sale!</p>
+<p class="text-center" *ngIf="locations.length <= 0 && !loading">No locations!</p>
 <div class="locations-list" *ngIf="locations.length >= 0">
   <div class="location-box">
   <div class="location-pane" style="height:20%;"
@@ -12,9 +12,8 @@
          <h1 style="padding-left: 5%; display:inline;">
            {{ location.title }}
          </h1>
-         <div class="location-info" style="padding-left: 25%;">
+         <div class="location-info" style="padding-left: 15%;padding-top: 0%;">
            <h2>
-
              {{ location?.description }}
            </h2>
          </div>

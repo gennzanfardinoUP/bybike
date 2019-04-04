@@ -10,9 +10,6 @@
       <a class="header-link" routerLink="/new-location" routerLinkActive="active">Admin</a>
     </li>
     <li class="header-navigation-item" *ngIf="isAuth">
-      <a class="header-link" style="cursor: pointer" (click)="onLogout()">LogOut</a>
-    </li>
-    <li class="header-navigation-item" *ngIf="isAuth">
       <input class="header-searchbar" type="text" placeholder="Search..">
     </li>
     <li class="header-navigation-item" *ngIf="!isAuth">

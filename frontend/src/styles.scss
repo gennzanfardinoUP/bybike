@@ -172,376 +172,378 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 
 
-@media only screen and (max-width: 512px) {
-	.homepageButton, .favouritesButton {
-		min-height: 20px;
-		min-width: 50px;
-		background-color: white;
-		font-weight: bold;
-		font: Lucida;
-		text-align: center;
-		margin-left: 0.7em;
-		font-size: 26px;
-		margin-top: 0.7em;
-		text-align: center;
-}
+@media only screen and (max-width: 512px)
+{
 
-#first {
-	width: 20%;
-  height: 95%;
-  background: white;
-  margin-left: 20px;
-  margin-top: 25px;
-	display: inline-block;
-	border-radius: 5px;
-}
-#second{
-	width: 100%;
-	height: 40%;
-	background: #008FFF;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
+      .homepageButton, .favouritesButton {
+      		min-height: 20px;
+      		min-width: 50px;
+      		background-color: white;
+      		font-weight: bold;
+      		font: Lucida;
+      		text-align: center;
+      		margin-left: 0.7em;
+      		font-size: 26px;
+      		margin-top: 0.7em;
+      		text-align: center;
+      }
 
-.usernav{
-	color: grey;
-	font-size: 25px;
-	text-decoration: none;
-	display: inline-block;
-}
+      #first {
+      	width: 20%;
+        height: 95%;
+        background: white;
+        margin-left: 20px;
+        margin-top: 25px;
+      	display: inline-block;
+      	border-radius: 5px;
+      }
+      #second{
+      	width: 100%;
+      	height: 40%;
+      	background: #008FFF;
+      	border-top-left-radius: 5px;
+      	border-top-right-radius: 5px;
+      }
 
-.usernavlist {
-  list-style-type: none;
-	margin-top: 18%;
-	display: flex;
-	flex-direction: column;
-}
+      .usernav{
+      	color: grey;
+      	font-size: 25px;
+      	text-decoration: none;
+      	display: inline-block;
+      }
 
-.usernavalign{
-  margin: 10px;
-	text-align: left;
-	padding-left: 18%;
-}
+      .usernavlist {
+        list-style-type: none;
+      	margin-top: 18%;
+      	display: flex;
+      	flex-direction: column;
+      }
 
-.usernavicon{
-	position: relative;
-	top: 5px;
-  right: 5px;
-    display: inline-block;
-}
+      .usernavalign{
+        margin: 10px;
+      	text-align: left;
+      	padding-left: 18%;
+      }
 
-
-
-
-.dot {
-	height: 27%;
-  width: 25%;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: 25%;
-  margin-left: 5%;
-}
-
-.userheadicon{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 100%;
-}
-
-.username{
-	font-size: x-large;
-	display: inline-block;
-	position: relative;
-	bottom: 30px;
-	left: 10px
-}
-
-#locationbar{
-	background-color: #008FFF;
-	display: inline-block;
-	width: 65%;
-	height: 6%;
-	position: absolute;
-	top: 12%;
-	left: 26%;
-	border-radius: 5px;
-}
-
-#outerstarbox{
-	display: inline-block;
-	background-color: white;
-	height: 65%;
-	width: 65%;
-	position: absolute;
-	top: 23%;
-	left: 26%;
-	border-radius: 10px;
-}
-
-.innerstarbox{
-	display: block;
-	width: 100%;
-	height: 20%;
-	background-color: white;
-	border-color: white;
-	border-bottom-color: black;
-	border-style: solid;
-}
-
-#addrating{
-	display: inline-block;
-	background-color: #008FFF;
-  height: 6%;
-  width: 25%;
-  position: absolute;
-  top: 90%;
-  left: 26%;
-	border-radius: 5px;
-	margin: 0;
-	padding: 0;
-}
-
-#readreviews{
-	display: inline-block;
-	background-color: #008FFF;
-	height: 6%;
-	width: 25%;
-	position: absolute;
-	top: 90%;
-	left: 66%;
-	border-radius: 5px;
-}
-
-#addrating :hover{
-	background-color: skyblue;
-}
-
-#readreviews :hover{
-	background-color: skyblue;
-}
+      .usernavicon{
+      	position: relative;
+      	top: 5px;
+        right: 5px;
+          display: inline-block;
+      }
 
 
 
 
-.clicktext{
-	margin: 0;
-	text-align:center;
-	color: white;
-	position:	relative;
-	height: 100%;
-	border-radius: 5px;
-}
+      .dot {
+      	height: 27%;
+        width: 25%;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 25%;
+        margin-left: 5%;
+      }
 
-/*Report Fault CSS*/
+      .userheadicon{
+      	display: block;
+        margin-left: auto;
+        margin-right: auto;
+      	width: 100%;
+      }
 
-.clicktext{
-	margin: 0;
-	text-align:center;
-	color: white;
-	position:	relative;
-	height: 100%;
-	border-radius: 5px;
-}
+      .username{
+      	font-size: x-large;
+      	display: inline-block;
+      	position: relative;
+      	bottom: 30px;
+      	left: 10px
+      }
 
-#reporttitlebox{
-	display: inline-block;
-	background-color: #008FFF;
-	height: 7%;
-	width: 55%;
-	border-top-left-radius: 5px;
-	position: absolute;
-	top: 3%;
-	left: 26%;
-}
+      #locationbar{
+      	background-color: #008FFF;
+      	display: inline-block;
+      	width: 65%;
+      	height: 6%;
+      	position: absolute;
+      	top: 12%;
+      	left: 26%;
+      	border-radius: 5px;
+      }
 
-#reportbackbutton{
-	display: inline-block;
-	background-color: #008FFF;
-	height: 7%;
-	width: 11%;
-	border-top-right-radius: 5px;
-	position: absolute;
-	top: 3%;
-	left: 83%;
-}
+      #outerstarbox{
+      	display: inline-block;
+      	background-color: white;
+      	height: 65%;
+      	width: 65%;
+      	position: absolute;
+      	top: 23%;
+      	left: 26%;
+      	border-radius: 10px;
+      }
 
-#reportinfobox{
-	display: inline-block;
-	background-color: #008FFF;
-	height: 10%;
-	width: 68%;
-	position: absolute;
-	top: 13.5%;
-	left: 26%;
-}
+      .innerstarbox{
+      	display: block;
+      	width: 100%;
+      	height: 20%;
+      	background-color: white;
+      	border-color: white;
+      	border-bottom-color: black;
+      	border-style: solid;
+      }
 
-#reporttextbox{
-	display: inline-block;
-	min-width: 68%;
-	min-height: 62.5%;
-	max-width: 68%;
-	max-height: 62.5%;
-	position: absolute;
-	top: 27%;
-	left: 26%;
-}
+      #addrating{
+      	display: inline-block;
+      	background-color: #008FFF;
+        height: 6%;
+        width: 25%;
+        position: absolute;
+        top: 90%;
+        left: 26%;
+      	border-radius: 5px;
+      	margin: 0;
+      	padding: 0;
+      }
 
-.submitbutton{
-	background-color: #008FFF;
-	display: inline-block;
-	height: 5%;
-	width: 68%;
-	position: absolute;
-	top: 93%;
-	left: 26%;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
+      #readreviews{
+      	display: inline-block;
+      	background-color: #008FFF;
+      	height: 6%;
+      	width: 25%;
+      	position: absolute;
+      	top: 90%;
+      	left: 66%;
+      	border-radius: 5px;
+      }
 
-.backbutton{
-	display: inline-block;
-	background-color: #008FFF;
-	height: 6%;
-	width: 11%;
-	border-top-right-radius: 5px;
-	position: absolute;
-	top: 12%;
-	left: 83%;
-}
+      #addrating :hover{
+      	background-color: skyblue;
+      }
 
-#reportbackbutton :hover{
-	background-color: skyblue;
-}
+      #readreviews :hover{
+      	background-color: skyblue;
+      }
 
-.submitbutton :hover{
-	background-color: skyblue;
-}
 
-/*Star Rating*/
-*{
-    margin: 0;
-    padding: 0;
-}
-.rate {
-    float: right;
-    height: 46px;
-        margin-top: -3%;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:500%;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
 
-/*Add reviews background*/
-.locationbar{
-    background-color: #008FFF;
-    display: inline-block;
-    width: 68%;
-    height: 6%;
-    position: absolute;
-    top: 12%;
-    left: 26%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
 
-.locationbarshort{
-    background-color: #008FFF;
-    display: inline-block;
-    width: 56%;
-    height: 6%;
-    position: absolute;
-    top: 12%;
-    left: 26%;
-    border-top-left-radius: 5px;
-}
+      .clicktext{
+      	margin: 0;
+      	text-align:center;
+      	color: white;
+      	position:	relative;
+      	height: 100%;
+      	border-radius: 5px;
+      }
 
-.outerstarbox{
-    display: inline-block;
-    background-color: white;
-    height: 65%;
-    width: 68%;
-    position: absolute;
-    top: 23%;
-    left: 26%;
-}
+      /*Report Fault CSS*/
 
-.addbutton{
-    display: inline-block;
-    background-color: #008FFF;
-  height: 6%;
-  width: 25%;
-  position: absolute;
-  top: 90%;
-  left: 26%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+      .clicktext{
+      	margin: 0;
+      	text-align:center;
+      	color: white;
+      	position:	relative;
+      	height: 100%;
+      	border-radius: 5px;
+      }
 
-.addbutton :hover{
-    background-color: skyblue;
-}
+      #reporttitlebox{
+      	display: inline-block;
+      	background-color: #008FFF;
+      	height: 7%;
+      	width: 55%;
+      	border-top-left-radius: 5px;
+      	position: absolute;
+      	top: 3%;
+      	left: 26%;
+      }
 
-.submitRating{
-    display: inline-block;
-    background-color: #008FFF;
-  height: 6%;
-  width: 25%;
-  position: absolute;
-  top: 90%;
-  left: 69%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+      #reportbackbutton{
+      	display: inline-block;
+      	background-color: #008FFF;
+      	height: 7%;
+      	width: 11%;
+      	border-top-right-radius: 5px;
+      	position: absolute;
+      	top: 3%;
+      	left: 83%;
+      }
 
-.submitRating :hover{
-    background-color: skyblue;
-}
+      #reportinfobox{
+      	display: inline-block;
+      	background-color: #008FFF;
+      	height: 10%;
+      	width: 68%;
+      	position: absolute;
+      	top: 13.5%;
+      	left: 26%;
+      }
 
-/*Back button AddStarFeedback*/
-.backbutton :hover{
-    background-color: skyblue;
-}
+      #reporttextbox{
+      	display: inline-block;
+      	min-width: 68%;
+      	min-height: 62.5%;
+      	max-width: 68%;
+      	max-height: 62.5%;
+      	position: absolute;
+      	top: 27%;
+      	left: 26%;
+      }
 
-/*Review Feedback*/
+      .submitbutton{
+      	background-color: #008FFF;
+      	display: inline-block;
+      	height: 5%;
+      	width: 68%;
+      	position: absolute;
+      	top: 93%;
+      	left: 26%;
+      	border-bottom-left-radius: 5px;
+      	border-bottom-right-radius: 5px;
+      }
 
-#reviewtextbox{
-	display: inline-block;
-	min-width: 68%;
-	min-height: 62.5%;
-	max-width: 68%;
-	max-height: 62.5%;
-	position: absolute;
-	top: 23%;
-	left: 26%;
-}
+      .backbutton{
+      	display: inline-block;
+      	background-color: #008FFF;
+      	height: 6%;
+      	width: 11%;
+      	border-top-right-radius: 5px;
+      	position: absolute;
+      	top: 12%;
+      	left: 83%;
+      }
+
+      #reportbackbutton :hover{
+      	background-color: skyblue;
+      }
+
+      .submitbutton :hover{
+      	background-color: skyblue;
+      }
+
+      /*Star Rating*/
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      .rate {
+          float: right;
+          height: 46px;
+              margin-top: -3%;
+          padding: 0 10px;
+      }
+      .rate:not(:checked) > input {
+          position:absolute;
+          top:-9999px;
+      }
+      .rate:not(:checked) > label {
+          float:right;
+          width:1em;
+          overflow:hidden;
+          white-space:nowrap;
+          cursor:pointer;
+          font-size:500%;
+          color:#ccc;
+      }
+      .rate:not(:checked) > label:before {
+          content: '★ ';
+      }
+      .rate > input:checked ~ label {
+          color: #ffc700;
+      }
+      .rate:not(:checked) > label:hover,
+      .rate:not(:checked) > label:hover ~ label {
+          color: #deb217;
+      }
+      .rate > input:checked + label:hover,
+      .rate > input:checked + label:hover ~ label,
+      .rate > input:checked ~ label:hover,
+      .rate > input:checked ~ label:hover ~ label,
+      .rate > label:hover ~ input:checked ~ label {
+          color: #c59b08;
+      }
+
+      /*Add reviews background*/
+      .locationbar{
+          background-color: #008FFF;
+          display: inline-block;
+          width: 68%;
+          height: 6%;
+          position: absolute;
+          top: 12%;
+          left: 26%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+      }
+
+      .locationbarshort{
+          background-color: #008FFF;
+          display: inline-block;
+          width: 56%;
+          height: 6%;
+          position: absolute;
+          top: 12%;
+          left: 26%;
+          border-top-left-radius: 5px;
+      }
+
+      .outerstarbox{
+          display: inline-block;
+          background-color: white;
+          height: 65%;
+          width: 68%;
+          position: absolute;
+          top: 23%;
+          left: 26%;
+      }
+
+      .addbutton{
+          display: inline-block;
+          background-color: #008FFF;
+        height: 6%;
+        width: 25%;
+        position: absolute;
+        top: 90%;
+        left: 26%;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+      }
+
+      .addbutton :hover{
+          background-color: skyblue;
+      }
+
+      .submitRating{
+          display: inline-block;
+          background-color: #008FFF;
+        height: 6%;
+        width: 25%;
+        position: absolute;
+        top: 90%;
+        left: 69%;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+      }
+
+      .submitRating :hover{
+          background-color: skyblue;
+      }
+
+      /*Back button AddStarFeedback*/
+      .backbutton :hover{
+          background-color: skyblue;
+      }
+
+      /*Review Feedback*/
+
+      #reviewtextbox{
+      	display: inline-block;
+      	min-width: 68%;
+      	min-height: 62.5%;
+      	max-width: 68%;
+      	max-height: 62.5%;
+      	position: absolute;
+      	top: 23%;
+      	left: 26%;
+      }
 }
