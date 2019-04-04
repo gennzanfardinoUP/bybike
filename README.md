@@ -2,13 +2,13 @@ ByBike is a application which solves, potentially time consuming and dangerous r
 
 Legend:
 
-Student ID - GitHub Name
-UP827158 - Chtzmre
-UP864461 - 864461
-UP821837 - 821837/8212837
-UP837518 - UP837518/rehanchughtai97
-UP914294 - up914294
-UP858239 - BradS0
+<br>Student ID - GitHub Name</br>
+<br>UP827158 - Chtzmre</br>
+<br>UP864461 - 864461</br>
+<br>UP821837 - 821837/8212837</br>
+<br>UP837518 - UP837518/rehanchughtai97</br>
+<br>UP914294 - up914294</br>
+<br>UP858239 - BradS0</br>
 
 How to run the web application:
 
