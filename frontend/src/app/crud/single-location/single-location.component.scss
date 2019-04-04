@@ -1,35 +1,29 @@
 .single-location-pane {
-  position: relative;
-  width: 60%;
-  margin: auto;
-}
 
+}
 img {
   position: relative;
-  width: 25%;
-  margin-left: 2%
+  width: 18%;
+  margin-left: 2%;
+  float: left;
 }
 
 .single-location-info {
-  width: 30%;
   margin-left: 5%;
-}
-
-.single-location-price {
-  color: #6eb5ff;
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-bottom: 10%;
 }
 
 .review-box{
-  position: absolute;
-    /* top: 20%; */
-    /* color: white; */
-    display: inline-block;
-    left: 100%;
-    top: 130%;
-    background-color: #008FFF;
-    height: 20%;
-    width: 30%;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-left: 4%;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 80%;
+  width: 70%;
+  float: center;
 }
 
 #outerstarbox{

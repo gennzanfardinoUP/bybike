@@ -2,21 +2,22 @@
 <p class="text-center" *ngIf="locations.length <= 0 && !loading">No locations!</p>
 <div class="locations-list" *ngIf="locations.length >= 0">
   <div class="location-box">
-  <div class="location-pane" style="height:20%;"
-       *ngFor="let location of locations"
-       [ngClass]="{'open': location._id === chosenId}"
-       [ngStyle]="{}"
-       (click)="onProductClicked(location._id)">
-         <div>
-           <img src="{{location.imageUrl}}" style="max-width:10%;">
-         <h1 style="padding-left: 5%; display:inline;">
-           {{ location.title }}
-         </h1>
-         <div class="location-info" style="padding-left: 15%;padding-top: 0%;">
-           <h2>
-             {{ location?.description }}
-           </h2>
-         </div>
-         </div>
+    <div class="location-pane"
+         *ngFor="let location of locations"
+         [ngClass]="{'open': location._id === chosenId}"
+         [ngStyle]="{}"
+         (click)="onProductClicked(location._id)">
+           <div class="location-panel">
+             <img src="{{location.imageUrl}}" style="">
+             <h1 style="padding-left: 5%; display:inline;">
+               {{ location.title }}
+             </h1>
+             <div class="location-info" style="padding-left: 15%;padding-top: 0%;">
+               <h2>
+                 {{ location?.description }}
+               </h2>
+             </div>
+           </div>
+    </div>
   </div>
 </div>
