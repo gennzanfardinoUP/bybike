@@ -13,9 +13,12 @@
        <div class="review-info">
          <h5>
 
-           {{ review?.description }} {{ review.price / 5 }}
+           {{ review?.description }}
          </h5>
        </div>
   </div>
-  </div>
+  <div id="addrating" *ngIf="!isAuth">
+    <a class="" routerLink="/location/:id/new-review" routerLinkActive="active" style="text-decoration: none">
+      <h1 class="clicktext">Add Review</h1>
+    </a>
 </div>
