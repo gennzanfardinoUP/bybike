@@ -8,13 +8,13 @@ const bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
 
-const Thing = require('./models/thing');
-
-const stuffRoutes = require('./routes/stuff');
-
 const Location = require('./models/location');
 
 const locationsRoutes = require('./routes/locations');
+
+const Review = require('./models/review');
+
+const reviewsRoutes = require('./routes/reviews');
 
 const userRoutes  = require('./routes/user');
 
@@ -36,9 +36,8 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.use('/api/stuff', stuffRoutes);
-
 app.use('/api/locations', locationsRoutes);
+app.use('/api/reviews', reviewsRoutes);
 
 app.use('/api/auth',  userRoutes);
 
