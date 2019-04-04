@@ -3,5 +3,5 @@ export class Review {
   userId: string;
   locId: string;
   title: string;
-  review: string;
+  description: string;
 }

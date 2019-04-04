@@ -48,7 +48,6 @@ export class ModifyLocationComponent implements OnInit {
             this.location = location;
             this.locationForm.get('title').setValue(this.location.title);
             this.locationForm.get('description').setValue(this.location.description);
-            this.locationForm.get('price').setValue(this.location.price / 100);
             this.locationForm.get('imageUrl').setValue(this.location.imageUrl);
             this.loading = false;
           }
@@ -62,7 +61,6 @@ export class ModifyLocationComponent implements OnInit {
     const location = new Location();
     location.title = this.locationForm.get('title').value;
     location.description = this.locationForm.get('description').value;
-    location.price = this.locationForm.get('price').value * 100;
     location.imageUrl = this.locationForm.get('imageUrl').value;
     location._id = new Date().getTime().toString();
     location.userId = this.location.userId;

@@ -18,13 +18,13 @@ export class ReviewsService {
       userId: 'ASB112162768',
       locId: '120981371823',
       title: 'Amazing location',
-      reviewDescription: 'This place was amazing. Trees and clean seaside'},
+      description: 'This place was amazing. Trees and clean seaside'},
     {
         _id: '02222201',
         userId: 'ASB1u12162768',
         locId: '1209881371823',
         title: 'Amazing locations',
-        reviewDescription: 'This place was ok. Trees and clean seaside'},
+        description: 'This place was ok. Trees and clean seaside'},
   ];
   public reviews$ = new Subject<Review[]>();
 

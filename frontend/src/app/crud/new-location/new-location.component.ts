@@ -49,7 +49,6 @@ export class NewLocationComponent implements OnInit, OnDestroy {
     const location = new Location();
     location.title = this.locationForm.get('title').value;
     location.description = this.locationForm.get('description').value;
-    location.price = this.locationForm.get('price').value * 100;
     location.imageUrl = this.locationForm.get('imageUrl').value;
     location._id = new Date().getTime().toString();
     location.userId = this.userId;

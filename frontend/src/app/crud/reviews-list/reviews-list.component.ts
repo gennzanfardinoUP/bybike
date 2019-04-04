@@ -24,7 +24,7 @@ export class ReviewsListComponent implements OnInit, OnDestroy {
 
   constructor(private state: StateService,
               private reviewsService: ReviewsService,
-              private router: Router
+              private router: Router,
               private loc: LocationsService) { }
 
   ngOnInit() {
