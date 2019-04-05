@@ -12,3 +12,8 @@ describe("Load the register Page ", function(){
   it('register user', function () {
 
 
+    
+
+
+    });
+  });
