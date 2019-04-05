@@ -36,6 +36,25 @@ npm install --g
 .
 .
 
+How to run the program:
+
+1.Open Backend folder
+2.Ctrl - Shift - Right Click
+3.Open Windows Power Shell
+4.Type nodemon server
+5.Leave it open in background and open frontend folder
+6.Ctrl - Shift - Right Click
+7.Open Windoes Power Shell
+8.Type ng serve
+9.On a browser, go to localhost:4200
+10. Website can now be accessed
+
+You can register if you desire
+
+Login Details to access straight away:
+
+Email Address - a@a.com
+Password - a
 
 -----------------------------------------------------------------------------------------------------------
 Based from previous submissions, we intended to write this program in HTML,CSS, JavaScript and PHP. We then opted to using A mean stack due to team members not being well versed in Javascript. Initially, we were going to use minimal javascript and work mainly on html, css and php. However, when it came to implement and write the code for the prototype, we found it would be a lot more effecient and appropriate to include AngularJS, especially based on the fact that it helps to communicate backend and frontend. 
