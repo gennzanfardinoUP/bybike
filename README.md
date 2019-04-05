@@ -51,15 +51,16 @@ One final thing to mention, We have a map api which shows maps, routes and direc
 Overall, As a team we believe we have worked hard to closely follow the documentation of our systems requirement and our design documentation. However, we have had a few slip ups such as lack of communication between the two teams that were made. Initially when we had our first meeting regarding this prototype, we split ourselves into small teams which were the backend team and the frontend team. In this project we found there was a lack of communication with backend and frontend teams. This in turn slowed our process down which meant that implementing certain features became fairly impossible due to the time constraint as a result of lack of communication. Also a big part of the functions which were not implemented was also the switch from using HTML, CSS, JavaScript and PHP to now implementing our web application using AngularJS, which was new to most, if not all of us. This took time to understand and implement. In conclusion to this, we would say our biggest problems we faced were lack of available time between the team and communication between the two teams and a big switch between the use of languages very far into the project. 
 
 Implemented Functions:
--Register a new user
--Login exiting user
--view reviews of locations
--Favourite
--report
--log out
+<br>-Register a new user</br>
+<br>-Login exiting user</br>
+<br>-view reviews of locations</br>
+<br>-Favourite</br>
+<br>-report</br>
+<br>-log out</br>
+<br></br>
 
 Functions which haven't been implemented:
--location search
--Add rating
--Add feedback
--account deletion
+<br>-location search</br>
+<br>-Add rating</br>
+<br>-Add feedback</br>
+<br>-account deletion</br>
