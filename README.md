@@ -3,7 +3,6 @@
 ByBike is a application which solves, potentially time consuming and dangerous routing problems such as diversion into disfavored areas which are inaccessible,  heavily trafficked or require excessive energy to overcome such as an uphill road. The aim is to improve cyclist’s routes to their destination so the user can have more enjoyable journeys and keep them safe by bringing to attention any obstructions or potential problems on their route. ByBike plans to grant navigation advice primarily based on community feedback, allowing the user to self-verify which route they want to take.
 
 Legend:
-
 <br>Student ID - GitHub Name</br>
 <br>UP827158 - Chtzmre</br>
 <br>UP864461 - 864461</br>
@@ -12,50 +11,56 @@ Legend:
 <br>UP914294 - up914294</br>
 <br>UP858239 - BradS0</br>
 
-How to run the web application:
-
+<h2>How to install the web application on Windows & Linux:</h2>
 Download and install latest stable versions of node.js<br/>
-Open Command Line and <code>cd</code> into the directory that will contain the web platform.<br/>
 Install on your system Angular with <code>npm install -g @angular/cli</code>
 
-git clone https://github.com/OpenClassrooms-Student-Center/5614116-front-end-app.git bybike
+Open Command Line and <code>cd</code> into the directory that will contain the web platform.<br/><br/>
 
-Open the backend folder
+To download a basic Nodejs and Angularjs template to test and launch this repo code we created<br/>
+a zip file filled up with auto-generated code and dependencies, link to download:<br/>
+<code>https://drive.google.com/open?id=1cj83J-5mQRHgIMSL9LB8en7PKx7LvQL7</code><br/><br/>
+Extract it.<br/><br/>
+<h4>Frontend installation:</h4>
+<code>cd BasicInstaller/frontend </code>and paste in this folder the content of the <code>frontend</code> folder of this repo<br/>
+Inside the folder launch <code>npm install</code> to install all needed dependencies for the Angularjs frontend<br/><br/>
 
-Ctrl - shift - right click
+<code>cd ..</code><br/><br/>
 
-Open Windows Powershell
+<h4>Backend installation:</h4>
+<p><code>cd backend</code> and paste in this folder the content of the <code>backend</code> folder of this repo.</p><br/>
+Launch the command <code>npm init</code> to initialize your project. Using <code>server.js</code> as entry point.<br/>
+Then launch <code>npm install --save express</code> to install express;<br/>
+<code>npm install --save body-parser ; npm install --save jsonwebtoken</code> to install the json extractor;<br/>
+<code>npm install --save mongoose</code> to interact with MongoDB;<br/>
+<code>npm install --save mongoose-unique-validator ; npm install --save bcrypt</code> for authentication;<br/>
+<code>npm install -g nodemon</code> to install the server updater<br/>
+<br/>
+.<br/>
+.<br/>
+.<br/>
+.<br/>
+<br/>
+<h3>How to run the program:</h3>
 
-npm init
-
-npm install --g
-
-.
-.
-.
-.
-.
-
-How to run the program:
-
-1.Open Backend folder
-2.Ctrl - Shift - Right Click
-3.Open Windows Power Shell
-4.Type nodemon server
-5.Leave it open in background and open frontend folder
-6.Ctrl - Shift - Right Click
-7.Open Windoes Power Shell
-8.Type ng serve
-9.On a browser, go to localhost:4200
-10. Website can now be accessed
-
-You can register if you desire
-
-Login Details to access straight away:
-
-Email Address - a@a.com
-Password - a
-
+1.Open Backend folder<br/>
+2.Ctrl - Shift - Right Click<br/>
+3.Open Windows Power Shell<br/>
+4.Type <code>nodemon server</code><br/>
+5.Leave it open in background and open frontend folder<br/>
+6.Ctrl - Shift - Right Click<br/>
+7.Open Windoes Power Shell<br/>
+8.Type <code>ng serve</code><br/>
+9.On a browser, go to localhost:4200<br/>
+10. Website can now be accessed<br/>
+<br/>
+You can register if you desire<br/>
+<br/>
+Login Details to access straight away:<br/>
+<br/>
+Email Address - mark@gmail.com<br/>
+Password - mark<br/>
+<br/>
 -----------------------------------------------------------------------------------------------------------
 Based from previous submissions, we intended to write this program in HTML,CSS, JavaScript and PHP. We then opted to using A mean stack due to team members not being well versed in Javascript. Initially, we were going to use minimal javascript and work mainly on html, css and php. However, when it came to implement and write the code for the prototype, we found it would be a lot more effecient and appropriate to include AngularJS, especially based on the fact that it helps to communicate backend and frontend. 
 
@@ -86,7 +91,7 @@ Implemented Functions:
 <br>-log out</br>
 <br></br>
 
-Functions which haven't been implemented:
+Functions which haven't been implemented yet:
 <br>-location search</br>
 <br>-Add rating</br>
 <br>-Add feedback</br>
